@@ -19,6 +19,21 @@ footer {
   width: 30px;
 }
 
+@keyframes icons-둥둥 {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .footer-icons {
   display: flex;
   justify-content: center;
@@ -31,4 +46,8 @@ footer {
 .footer-icons__desc {
   margin-top: 5px;
   font-size: 10px;
+}
+
+.footer-icons:hover .footer-icons__img:hover {
+  animation: 1s icons-둥둥;
 }
